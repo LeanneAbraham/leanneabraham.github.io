@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="../css/style.css">
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Work+Sans:Thin,ExtraLight,Light,Regular,Medium,SemiBold,Bold,ExtraBold,Black" rel="stylesheet">
+		<link rel="icon" href="../images/tab.png">
+	</head>
+	
+<body>
+<div class="container-fluid">
+<div class="row">
+<!--sidebar start here-->
+<div class="sidebar" role="navigation">
+	<ul id="sidebar" data-spy="affix" class="col-lg-3 col-md-4 col-sm-4 col-xs-12 pull-left list-unstyled sidebar">
+		<li>
+			<div class="header">
+				<h1><a class="name" href="index.html">leanne abraham</a></h1>
+				<p>cartographer &#9679; student &#9679; bread enthusiast</p>
+			</div>
+		<li class="sidenav"><a href="../portfolio.html">portfolio</a></li>
+			<li class="active sidenav-sub"><a href="../projectpages/turkishbiketour.html">turkish bike tour</a></li>
+			<li class="sidenav-sub"><a href="etchmap.html">online etch map</a></li>
+			<li class="sidenav-sub"><a href="../projectpages/streetlights.html">illuminating crime</a></li>
+			<li class="sidenav-sub"><a href="../projectpages/valleymap.html">san fernando valley map</a></li>
+		<li class="sidenav"><a href="../resume.html">resume</a></li>
+		</li>
+	</ul>
+	</div>
+	
+</div>
+<!--sidenav end here-->
+
+<!--thumbnails start here-->
+<div class="main mainimg column1 pull-right col-lg-9 col-md-8 col-sm-8 col-xs-12">			<h2 align="center">turkish bike tour</h2>
+	<p>What would it look like if a Tour de France style bike race took place in Turkey? With this scenario as the challenge I designed a fictional bike race that would have the riders trace Turkey’s two coasts as a means of exploring both how to depict terrain on a country level scale and how to add additional information to a basemap that is already extremely visually dense. </p>
+	<p>For this project I generated a shaded relief in ArcMap using a 15 arc minute DEM from <a href="http://viewfinderpanoramas.org">Viewfinder Panoramas</a> that I then draped landcover information over from the <a href="http://www.glcn.org/databases/lc_glcshare_en.jsp">FAO</a>. The hillshade and landcover layers in addition to the bathymetry were smoothed and color corrected in Photoshop. Finally, the route was generated using Google My Maps and imported to ArcMap as a KLM. All other map layers are Natural Earth data. Vector and Raster layers were combined in Illustrator which is also where the side panel with additional route information and the race logo were generated.</p>
+	<img src="../images/Turkish_Terrain_Bike_Tour.png" alt="turkish bike tour" class="img-responsive center-block thumb" />
+	<p class="small">(click <a target="_blank" href="../images/Turkish_Terrain_Bike_Tour.png">here</a> to view the full map)</p>
+</div>
+<!--thumbnails end here-->
+	</body>
+</html>
