@@ -203,3 +203,8 @@ td {
 @media (min-width: 768px){
 table.volunteer {width: 70%;}
 }
+
+a {
+	font-weight: 500;
+	color: #008AFF;
+	}
