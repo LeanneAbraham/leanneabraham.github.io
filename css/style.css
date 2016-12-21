@@ -208,3 +208,21 @@ a {
 	font-weight: 500;
 	color: #008AFF;
 	}
+
+/*A Critical Madison Food Atlas*/
+
+.atlas {
+	background-color: #E0E0E0;
+	color: black;
+}
+body.atlas {
+	background-color: #E0E0E0;
+}
+
+.atlas h2,h3 {
+	text-align: center;
+	color: black;
+}
+.atlas h2 {font-size: 4em;}
+.atlas h3 {font-size: 1.8em;}
+.atlas.header {font-size: 1.5em}
