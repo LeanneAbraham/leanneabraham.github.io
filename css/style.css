@@ -9,6 +9,7 @@
 	p {font-size: 1em;}
 	.sidenav {font-size: 1.2em;}
 	.sidenav-sub {font-size: 1em;}
+}
 li.sidenav {
 		background-color: white;
 		text-align: left;
@@ -20,7 +21,6 @@ li.active {
 	text-align: left;
 	margin: 10px 0px;
 }
-
 li.sidenav-sub {
 	width: 85%;
 	background-color: white;
@@ -32,6 +32,7 @@ li.active {
 		background-color: #DFFF00;
 	}
 
+}
 }
 /*small*/
 @media (max-width: 768px) {
@@ -68,19 +69,15 @@ li.active {
 	}
 .affix-top,.affix{position: static;}
 /*end freeze*/
-
 .sidebar {
 	color: black;
 	background-color: white;
 	height: 100%;
-	/*background-image: url( ../images/grid64.png);
-    background-repeat: repeat;*/
 	}
 ul.sidebar {
-    color: black;
+  color: black;
 	padding: 10px 10px 10px 10px;
 }
-
 .header {
 	padding: 10px 20px 10px 10px;
 	margin: 0px 0px 0px 0px;
@@ -90,15 +87,10 @@ ul.sidebar {
 .main {
 	padding: 25px 25px 25px 25px;
 	color: white;
-	/*background-color: #a0a0a0;
-	background-image: url("/images/32grid.png");
-	*/
 	}
-
 body {
 	background-color: black ;
 }
-
 .sidenav a {
 	color: black;
 }
@@ -108,17 +100,17 @@ body {
 
 /*fonts*/
 h2, h4 {
-    font-family: 'Work Sans', sans-serif;
-	letter-spacing: .2em;
+  font-family: 'Work Sans', sans-serif;
+	letter-spacing: .1em;
 	font-weight: 500;
 	text-align: left;
 }
 .main h2{
 	color:white;
-	font-size: 5em;
+	font-size: 4.5em;
 }
 p, a {
-    font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 	line-height: 1.3em;
 	letter-spacing: .1em;
 	text-decoration: none;
@@ -127,8 +119,9 @@ p, a {
 .header a {
 	color: black;
 	font-weight: 500;
-	letter-spacing: .15em;
 	text-align: left;
+	line-height: 1.2em;
+
 }
 .header p {
 	color: black;
@@ -139,16 +132,12 @@ p, a {
 p.small{
 	font-size: 12px;
 }
-a:hover {
-	color: #DFFF00;
-	text-decoration: none;
-}
+
 /*end fonts*/
 img {
 	margin: 15px 10px 10px 10px;
 	width: 100%;
 }
-
 .project img:hover {
 	opacity:.5;
 }
@@ -158,8 +147,6 @@ img {
 	float: left;
 	padding: 0px 10px
 }
-}
-
 .figure {
 	float: right;
 	padding: 0px 0px 5px 10px;
@@ -167,6 +154,7 @@ img {
 p.figure-caption {
 	font-size: .8em;
 	text-align: center;
+}
 }
 @media (min-width: 768px){
 .resume figure {
@@ -180,15 +168,9 @@ p.figure-caption {
 	float: center;
 	}
 }
-
 .resume h4 {
 	color: #DFFF00;
 }
-/*table, th, td {
-	width: 100%;
-	background-color: blue;
-	border: 1px solid white;
-}*/
 table {
 	width: 100%;
 }
@@ -196,18 +178,31 @@ td {
 	padding: 0px 0px 0px 0px;
 	vertical-align: top;
 	}
-.year p{
+.year p {
 	text-align: right;
 	width: 75px;
 }
 @media (min-width: 768px){
 table.volunteer {width: 70%;}
 }
-
+/*links*/
 a {
 	font-weight: 500;
 	color: #008AFF;
 	}
+#contact a {
+	color: white;
+	font-size: 1em;
+	font-kerning: normal;
+}
+#contact a:hover {
+	color: #DFFF00;
+	text-decoration: none;
+}
+a:hover {
+	color: #DFFF00;
+	text-decoration: none;
+}
 
 /*A Critical Madison Food Atlas*/
 
