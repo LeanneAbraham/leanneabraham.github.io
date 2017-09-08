@@ -11,16 +11,12 @@
 // </div>
 // </ul>
 
-window.onload = callback()
+window.onload = createSidebar()
 
-d3.queue()
-  .defer(d3.csv, 'data/projects.csv')
-  .await(callback);
-
-function callback(error, projects){
-  console.log(projects)
-
-  createSidebar();
+function createSidebar(){
+  d3.csv("/data/projects.csv", function(data) {
+    console.log(data);
+  });
 };
 
 
