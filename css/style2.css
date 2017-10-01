@@ -1,6 +1,18 @@
 /*general*/
+
+td.year {
+  text-align: right;
+  padding: 0;
+  vertical-align: top;
+}
+
+.resume h2 {
+  color: tomato;
+  padding: 25px 0px 10px 0px;
+}
+
 body {
-  background-color: black;
+  background-color: #a0a0a0;
   color: white;
   font-family: 'Work Sans', sans-serif;
   letter-spacing: .01em;
@@ -13,7 +25,7 @@ i {
   letter-spacing: .2em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   letter-spacing: .02em;
@@ -39,6 +51,15 @@ img {
   font-size: 30px;
 }
 
+ul.social {
+  padding: 0px!important;
+}
+
+
+.resume table{
+   width: 100%;
+}
+
 #sidebar {
   color: black;
   background-color: white;
@@ -47,6 +68,12 @@ img {
 
 #main {
   padding: 30px;
+}
+
+/*projects*/
+.project {
+  width: 20%;
+  height: 20%;
 }
 
 /*big*/
@@ -75,12 +102,7 @@ img {
 
 /*small*/
 @media (max-width: 700px) {
-  #sidebar{
+  #sidebar {
     width: 100%
   }
-
-  #sidebar a {
-    display: inline;
-  }
-
 }
