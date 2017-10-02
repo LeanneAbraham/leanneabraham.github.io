@@ -20,15 +20,20 @@ i {
   letter-spacing: .2em;
 }
 
-a {color: black;}
+a {color: tomato;}
 
 a:hover, i:hover {
   text-decoration: none;
-  color: tomato;
+  color: #009CB8;
 }
 
-img {
-  max-width: 350px;
+figure {
+  max-width: 45%;
+  float: right;
+}
+
+.portfolio {
+  margin: 0;
 }
 
 td.year {
@@ -69,9 +74,29 @@ ul.social {
   padding: 30px;
 }
 
+#sidebar a {
+  color: black!important;
+}
+
+#sidebar a:hover, i:hover{
+  color: tomato!important;
+}
+
+
 #main, #work {
   padding: 30px;
 }
+
+.atlas {
+  background-color: #E0E0E0;
+  color: black;
+}
+
+.atlas h2, h3 {
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+}
+
 /*projects*/
 .portfolio {
   display: flex;
@@ -82,7 +107,7 @@ ul.social {
 
 .project {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   /*max-width: 400px;*/
 }
 
@@ -91,6 +116,7 @@ ul.social {
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
+  margin-bottom: 0px;
 }
 
 /*formats the text*/
