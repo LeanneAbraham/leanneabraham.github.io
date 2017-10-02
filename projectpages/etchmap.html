@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
-		<head>
-		<meta charset=utf-8>
-		<link rel="stylesheet" href="../css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
-		<link rel="stylesheet" href="../css/style.css">
-		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Work+Sans:Thin,ExtraLight,Light,Regular,Medium,SemiBold,Bold,ExtraBold,Black" rel="stylesheet">
-		<link rel="icon" href="../images/tab.png">
-	</head>
-	
+<head>
+	<meta charset=utf-8>
+	<link rel="stylesheet" href="lib/bootstrap.css" />
+	<link rel="stylesheet" href="lib/bootstrap-theme.css" />
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="https://use.fontawesome.com/da97c88425.js"></script>
+	<script type="text/javascript" src="lib/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Work+Sans:300,400,500,600,700" rel="stylesheet">
+	<link rel="icon" href="images/tab.png">
+	<title>Leanne Abraham</title>
+</head>
+
 <body>
-<div class="container-fluid">
-<div class="row">
-<!--sidebar start here-->
-<div class="sidebar" role="navigation">
-	<ul id="sidebar" data-spy="affix" class="col-lg-3 col-md-4 col-sm-4 col-xs-12 pull-left list-unstyled sidebar">
-		<li>
+	<div id="mainpage">
+		<!--sidebar start here-->
+		<div id="sidebar">
 			<div class="header">
-				<h1><a class="name" href="../index.html">leanne abraham</a></h1>
-				<p>cartographer, clay enthusiast</p>
+				<h1>Leanne Abraham</h1>
+				<p>Cartographer &#9679; Student &#9679; Bread enthusiast</p>
 			</div>
-		<li class="sidenav"><a href="../portfolio.html">portfolio</a></li>
-			<li class="sidenav-sub"><a href="../projectpages/turkishbiketour.html">turkish bike tour</a></li>
-			<li class="active sidenav-sub"><a href="../projectpages/etchmap.html">online etch map</a></li>
-			<li class="sidenav-sub"><a href="../projectpages/streetlights.html">illuminating crime</a></li>
-			<li class="sidenav-sub"><a href="../projectpages/valleymap.html">san fernando valley map</a></li>
-		<li class="sidenav"><a href="../resume.html">resume</a></li>
-		</li>
-	</ul>
-	</div>
-	
-</div>
+			<div class="navigation">
+			<p class="sidenav"><a href="portfolio.html">Work</a></p>
+			<p class="sidenav"><a href="resume.html">Resume</a></p>
+			<p class="sidenav"><a href="index.html">About Me</a></p>
+		</div>
+			<div id="contact">
+				<ul class="social">
+					<li>
+						<a target="_blank" href="mailto:labraham2@wisc.edu">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://twitter.com/leannefaybraham">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/LeanneAbraham/">
+							<i class="fa fa-github" aria-hidden="true"></i>
+						</a>
+					</li>
+				</div>
+			</div>
+		</div>
 <!--sidenav end here-->
 
 <!--thumbnails start here-->
@@ -44,13 +57,13 @@
 				<p class="figure-caption text-xs-center">James McNeill Whistler's <em>Nocturne</em></p>
 			</a>
 		</figure>
-	
+
 	<p>This tileset was created as a means of exploring both how to translate an artistic style to a map as well as a vehicle to learn CartoCSS. To create this map I referenced images printed in the nineteenth century as a part of the Etching Revival, specifically the etchings of James McNeill Whistler, in order to recreate a print style which is simultaneously extremely exacting while still feeling intimate and hand-done within the constraints of a webmap, which often feels the opposite.</p>
-		
+
 	<p>In order to achieve this I used an extremely limited color palate and instead overlaid textures within the map that I created in photoshop and then tessellated within Mapbox Studio Classic. This was done in an attempt to recreate the atmospheric overlaying of thin lines, especially at higher zoom levels.</p>
-	
+
 	<p>As a final step, I created an icon set within Illustrator that I then imported into the map to depict places that Whistler lived and worked over the course of his life, and galleries which are currently displaying his work.</p>
-	
+
 	<iframe width="100%" height="500px" style="padding: 20px 0px" frameBorder="0" src="https://a.tiles.mapbox.com/v4/leanneabraham.7e5ad7d4.html?access_token=pk.eyJ1IjoibGVhbm5lYWJyYWhhbSIsImEiOiJjaXVvZjVtNGEwMTBiMm9wZWgxM2NjNjJtIn0.0SuLczxyMd4gPzPVU5YD7g"></iframe>
 	</div>
 <!--thumbnails end here-->

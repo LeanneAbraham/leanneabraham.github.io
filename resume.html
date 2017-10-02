@@ -6,8 +6,8 @@
 	<link rel="stylesheet" href="lib/bootstrap-theme.css" />
 	<link rel="stylesheet" href="css/style2.css">
 	<script src="https://use.fontawesome.com/da97c88425.js"></script>
-	<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Work+Sans:300,400,500,600,700" rel="stylesheet">
 	<link rel="icon" href="images/tab.png">
 	<title>Leanne Abraham</title>
@@ -16,14 +16,16 @@
 <body>
 	<div id="mainpage">
 		<!--sidebar start here-->
-		<div id="sidebar" role="navigation">
+		<div id="sidebar">
 			<div class="header">
-				<h1><a class="active name" href="index.html">Leanne Abraham</a></h1>
+				<h1>Leanne Abraham</h1>
 				<p>Cartographer &#9679; Student &#9679; Bread enthusiast</p>
 			</div>
+			<div class="navigation">
 			<p class="sidenav"><a href="portfolio.html">Work</a></p>
 			<p class="sidenav"><a href="resume.html">Resume</a></p>
 			<p class="sidenav"><a href="index.html">About Me</a></p>
+		</div>
 			<div id="contact">
 				<ul class="social">
 					<li>
@@ -42,6 +44,47 @@
 						</a>
 					</li>
 				</div>
+			</div>
+		</div>
+		<!--sidenav end here-->
+
+		<!--thumbnails start here-->
+		<div id="work">
+			<h2>Work</h2>
+
+			<div class="portfolio">
+				<a href="projectpages/turkishbiketour.html">
+					<div class="project">
+						<img src="images/Turkish_Terrain_Bike_Tour_thumb.png" alt="turkish bike tour" class="img__img" />
+						<div class="img__description_layer">
+							<p class="img__description">Turkish Bike Tour</p>
+						</div>
+					</div>
+				</a>
+				<a href="projectpages/etchmap.html">
+					<div class="project">
+						<img src="images/MapboxEtchmap_thumb.png" alt="etch map" class="img__img" />
+						<div class="img__description_layer">
+							<p class="img__description">Online Etch Map</p>
+						</div>
+					</div>
+				</a>
+				<a href="projectpages/streetlights.html">
+					<div class="project">
+						<img src="images/Illuminating_Crime_Thumb.png" alt="illuminating crime" class="img__img" />
+						<div class="img__description_layer">
+							<p class="img__description">Illuminating Crime</p>
+						</div>
+					</div>
+				</a>
+				<a href="projectpages/valleymap.html">
+					<div class="project">
+						<img src="images/ValleyMap_thumb.png" alt="valley map" class="img__img" />
+						<div class="img__description_layer">
+							<p class="img__description">San Fernando Valley Map</p>
+						</div>
+					</div>
+				</a>
 			</div>
 			<!--sidenav end here-->
 
