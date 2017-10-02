@@ -32,6 +32,10 @@ figure {
   float: right;
 }
 
+img {
+  max-width: 40%;
+}
+
 .portfolio {
   margin: 0;
 }
