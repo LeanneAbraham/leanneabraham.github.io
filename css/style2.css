@@ -23,17 +23,12 @@ i {
 a {color: tomato;}
 
 a:hover, i:hover {
-  text-decoration: none;
   color: #009CB8;
 }
 
 figure {
   max-width: 45%;
   float: right;
-}
-
-img {
-  max-width: 40%;
 }
 
 .portfolio {
@@ -101,62 +96,38 @@ ul.social {
   margin: 0px;
 }
 
+div.embedded-page, iframe {
+  width: 100%;
+  height: 99vh;
+  background-color: white;
+}
+
 /*projects*/
 .portfolio {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: flex-start;
+  align-items: flex-start;
 }
 
 .project {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  flex-grow: 2;
   /*max-width: 400px;*/
 }
 
+div.project {
+  overflow: hidden;
+}
+
 .img__img {
-  max-width: 300px;
+  max-width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
   margin-bottom: 0px;
-}
-
-/*formats the text*/
-.img__description_layer {
-  font-size: 1.2em;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  color: tomato;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  align-items: left;
-
-  /*justify-content: center;*/
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-
-.project:hover .img__description_layer {
-  visibility: visible;
-  opacity: .9;
-}
-
-.img__description {
-  padding: 10px 0px 0px 10px;
-  transition: .2s;
-  transform: translateY(1em);
-}
-
-.project:hover .img__description {
-  transform: translateY(0);
 }
 /*big*/
 @media (min-width: 700px) {
@@ -177,10 +148,83 @@ ul.social {
     position: absolute;
     bottom: 0;
   }
+/*format projects*/
+  div.project {
+    width: 300px;
+    height: 200px;
+  }
+
+  /*formats the text*/
+  .img__description_layer {
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    color: tomato;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: left;
+
+    /*justify-content: center;*/
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+  .project:hover .img__description_layer {
+    visibility: visible;
+    opacity: .9;
+  }
+
+  .img__description {
+    padding: 10px;
+    transition: .2s;
+    transform: translateY(1em);
+  }
+
+  .project:hover .img__description {
+    transform: translateY(0);
+  }
 }
+
+
 /*small*/
 @media (max-width: 700px) {
   #sidebar {
     width: 100%
+  }
+
+
+
+  /*projects*/
+
+  div.project {
+    width: 200px;
+    height: 150px;
+  }
+
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: tomato;
+    display: flex;
+    align-items: left;
+    z-index: 100;
+  }
+
+  .img__img {
+    width: 100%;
+  }
+
+  .img__description {
+    background-color: white;
+    margin: 10px;
   }
 }
