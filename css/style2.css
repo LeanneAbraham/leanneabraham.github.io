@@ -133,15 +133,15 @@ div.project {
 @media (min-width: 700px) {
   #sidebar {
     height: 100vh;
-    width: 33.3333333333%;
+    width: 25%;
     position: fixed;
     top: 0;
     left: 0;
   }
 
   #main, #work{
-    width: 66.6666666667%;
-    margin-left: 33.3333333333%;
+    width: 75%;
+    margin-left: 25%;
   }
 
   #contact {
