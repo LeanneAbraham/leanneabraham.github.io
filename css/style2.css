@@ -23,6 +23,7 @@ i {
 a {color: tomato;}
 
 a:hover, i:hover {
+  text-decoration: none;
   color: #009CB8;
 }
 
@@ -78,6 +79,7 @@ ul.social {
 }
 
 #sidebar a:hover, i:hover{
+  text-decoration: none;
   color: tomato!important;
 }
 
@@ -111,13 +113,6 @@ div.embedded-page, iframe {
   align-items: flex-start;
 }
 
-.project {
-  position: relative;
-  margin-bottom: 30px;
-  flex-grow: 2;
-  /*max-width: 400px;*/
-}
-
 div.project {
   overflow: hidden;
 }
@@ -129,8 +124,27 @@ div.project {
   overflow: hidden;
   margin-bottom: 0px;
 }
+/*medium*/
+@media screen (max-width: 900px) {
+  #sidebar {
+    height: 100vh;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #main, #work{
+    width: 70%;
+    margin-left: 30%;
+  }
+
+  #contact {
+    position: absolute;
+    bottom: 0;
+  }
+}
 /*big*/
-@media (min-width: 700px) {
+@media screen (min-width: 700px) {
   #sidebar {
     height: 100vh;
     width: 25%;
@@ -148,7 +162,7 @@ div.project {
     position: absolute;
     bottom: 0;
   }
-/*format projects*/
+  /*format projects*/
   div.project {
     width: 300px;
     height: 200px;
@@ -190,18 +204,13 @@ div.project {
     transform: translateY(0);
   }
 }
-
-
 /*small*/
-@media (max-width: 700px) {
+@media screen (max-width: 700px) {
   #sidebar {
     width: 100%
   }
 
-
-
   /*projects*/
-
   div.project {
     width: 200px;
     height: 150px;
