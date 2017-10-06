@@ -95,18 +95,21 @@ ul.social {
   padding: 30px;
 }
 
-/*#skills {
+#skills {
   float: right;
-  width: 30%;
 }
 
-#volunteer {
-  width: 70%;
+#skills img {
+  max-width: 100%;
 }
 
 #resume-bottom {
   display: flex;
-}*/
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
 
 .atlas {
   background-color: #E0E0E0;
