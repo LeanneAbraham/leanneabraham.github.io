@@ -32,7 +32,7 @@
 				<p class="sidenav"><a href="../index.html">Work</a></p>
 				<p class="sidenav"><a href="../resume.html">Resume</a></p>
 				<p class="sidenav"><a href="../about-me.html">About Me</a></p>
-		</div>
+			</div>
 			<div id="contact">
 				<ul class="social">
 					<li>
@@ -55,14 +55,51 @@
 		</div>
 		<!--sidenav end here-->
 
-<!--thumbnails start here-->
-<div id="main">
-	<h2>TKTK</h2>
-	<p>What would it look like if a Tour de France style bike race took place in Turkey? With this scenario as the challenge I designed a fictional bike race that would have the riders trace Turkey’s two coasts as a means of exploring both how to depict terrain on a country level scale and how to add additional information to a basemap that is already extremely visually dense. </p>
-	<p>For this project I generated a shaded relief in ArcMap using a 15 arc minute DEM from <a href="http://viewfinderpanoramas.org">Viewfinder Panoramas</a> that I then draped landcover information over from the <a href="http://www.glcn.org/databases/lc_glcshare_en.jsp">FAO</a>. The hillshade and landcover layers in addition to the bathymetry were smoothed and color corrected in Photoshop. Finally, the route was generated using Google My Maps and imported to ArcMap as a KML. All other map layers are Natural Earth data. Vector and Raster layers were combined in Illustrator which is also where the side panel with additional route information and the race logo were generated.</p>
-	<img src="../images/china-map-thumb.png" alt="turkish bike tour" class="img-responsive center-block thumb" />
-	<h3>(click <a target="_blank" href="../images/china-map-fullres.png">here</a> to view the full map)</h3>
-</div>
-<!--thumbnails end here-->
+		<!--thumbnails start here-->
+		<div id="main">
+			<h2>World Regional Geography Reference Maps</h2>
+			<p>These maps were produced to accompany an open source World Regional Geography textbook that will be released in late 2018/early 2019. The design of these maps was developed as a reference for the rest of the maps and graphics that will be produced to accompany the text. Subsequently, this necessitated the design of these maps to be open source, accessible, and created using open source tools as much as possible. </p>
+			<p>I started by creating a reference base map with each of the 10 regions that will be featured in the text given a unique colorway to be utilized in the design of the reference maps for that region. Each chapter author was allowed to choose the countries featured in their region, meaning this base map needed to be nimble and account for the inclusion of different countries in multiple chapters of the book. </p>
+			<b>Process</b>
+			<p>All terrain was generated using 90m SRTM data which was mosaiced in ArcMap, clipped, and reprojected by region. I then followed Daniel Huffman’s Blender tutorial to generate the shaded relief using blender. </p>
+			<p>After much debate about the labeling of natural features, it was decided that the only labels included in the map would be of major populated places, countries both inside and outside of the region, and large bodies of water. All data comes from Natural earth.</p>
+			<p>
+				<h4>China and Its Neighbors</h4>
+				<a target="_blank" href="../images/china-map-fullres.png">
+					<img src="../images/china-map-thumb.png" class="img-responsive center-block thumb"  />
+				</a>
+			</p>
+			<p>
+				<h4>The Pacific Rim</h4>
+				<a target="_blank" href="../images/pacific-rim-map-fullres.png">
+					<img src="../images/pacific-rim-map-thumb.png" class="img-responsive center-block thumb"  />
+				</a>
+			</p>
+			<p>
+				<h4>Europe</h4>
+				<a target="_blank" href="../images/europe-map-fullres.png">
+					<img src="../images/europe-map-thumb.png" class="img-responsive center-block thumb"  />
+				</a>
+			</p>
+			<p>
+				<h4>Africa</h4>
+				<a target="_blank" href="../images/africa-map-fullres.png">
+					<img src="../images/africa-map-thumb.png" class="img-responsive center-block thumb"  />
+				</a>
+			</p>
+			<p>
+				<h4>North America</h4>
+				<a target="_blank" href="../images/north-america-map-fullres.png">
+					<img src="../images/north-america-map-thumb.png" class="img-responsive center-block thumb"  />
+				</a>
+			</p>
+			<p>
+				<h4>The Former Soviet Union</h4>
+				<a target="_blank" href="../images/russia-map-fullres.png">
+					<img src="../images/russia-map-thumb.png" class="img-responsive center-block thumb"  />
+				</a>
+			</p>
+		</div>
+		<!--thumbnails end here-->
 	</body>
-</html>
+	</html>
